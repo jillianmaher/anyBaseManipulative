@@ -3,7 +3,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
  
 public class HelloWorld extends Application {
@@ -35,7 +35,7 @@ public class HelloWorld extends Application {
         });
 
         
-        StackPane root = new StackPane();
+        TilePane root = new TilePane();
         root.getChildren().add(btn1);
         root.getChildren().add(btn2);
         primaryStage.setScene(new Scene(root, 300, 250));
